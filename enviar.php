@@ -1,5 +1,5 @@
 <?php 
-$myemail = 'fxexperience@outlook.es';
+$myemail = 'Infofxexperience@gmail.com';
 $name = $_POST['nombre'];
 $email = $_POST['email'];
 $telefono = $_POST['telefono'];

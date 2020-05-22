@@ -202,20 +202,13 @@ footer a:hover {
 #precios {
     background-color: #1c2541;
 }
-#precios h2{
-    color: white;
-}
-.basico{
-    color: red;
-    padding-bottom: 0px;
-}
-.precio1{
-    font-size: 55px;
+.precios {
     text-align: center;
-    color: red;
 }
-.tiempo1{
-    font-size: 25px;
-    text-align: center;
-    color: red;
+#opera {
+    color: rgb(39, 121, 122);
+}
+
+.titulo {
+    height: 25em;
 }
