@@ -10,11 +10,6 @@
   <!-- BOOSTRAP CSS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!-- FONT AWESOME-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
-  <link href="css/pe-icon-7-stroke.css" rel="stylesheet" media="screen">
   <!-- GOOGLE FONTS-->
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
   <!-- icons -->
@@ -65,16 +60,64 @@
         <div class="col">
           <h1 class="pt-5"><strong>Inverti desde cualquier parte del mundo</strong></h1>
           <h2 class="pt-5"><strong>Genera con nosotros las mejores rentabilidades</strong></h2>
-          <button class="btn-primary btn-lg mt-2">¡Comenzá ahora!</button>
+          <a href="#precios">
+            <button class="btn-primary btn-lg mt-2">¡Comenzá ahora!</button>
+          </a>
+
         </div>
       </div>
     </div>
   </header>
   <!-- FIN HEADER-->
 
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+      {
+        "symbols": [
+          {
+            "proName": "BITSTAMP:BTCUSD",
+            "title": "BTC/USD"
+          },
+          {
+            "description": "",
+            "proName": "EURUSD"
+          },
+          {
+            "description": "",
+            "proName": "FX:USDJPY"
+          },
+          {
+            "description": "",
+            "proName": "FX:GBPJPY"
+          },
+          {
+            "description": "",
+            "proName": "FX:GBPUSD"
+          },
+          {
+            "description": "",
+            "proName": "FOREXCOM:XAUUSD"
+          },
+          {
+            "description": "",
+            "proName": "FX_IDC:USDARS"
+          }
+        ],
+          "colorTheme": "light",
+            "isTransparent": false,
+              "locale": "es"
+      }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
   <!-- INCIO SERVICIOS-->
   <section id="servicios" class="pt-1">
     <div class="container">
+      <video src="img/celuvideo.mp4" autoplay controls></video>
       <h2 class="mt-4">¿Cómo trabajamos?</h2>
       <div class="row pt-4">
 
@@ -152,7 +195,7 @@
               -->
             <div class="card-body">
               <h4 class="card-title">
-                <img id="img-telegram" src="img/telegram.svg" width="50px" alt="">
+                <img id="img-telegram" src="img/Telegram-logo.png" width="90px" alt="">
               </h4>
               <p class="card-text">Notificaciones via telegram</p>
             </div>
@@ -163,7 +206,7 @@
               -->
             <div class="card-body">
               <h4 class="card-title">
-                <img src="img/aperture.svg" width="50px" alt="">
+                <img src="img/images.jpg" width="50px" alt="">
               </h4>
               <p class="card-text">Cargue los datos publicados en el programa de gestión</p>
             </div>
@@ -193,20 +236,64 @@
 
         <div class="col precios">
           <img src="img/precios1_1.png" width="350em" alt="">
-          <a href="#" class="btn btn-primary btn-lg">MercadoPago</a>
-          <a href="#" class="btn btn-primary btn-lg">Paypal</a>
+
+          <!-- Boton de MercadoPago y Paypal-->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+            <a mp-mode="dftl"
+              href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=164184145-54b942b9-332e-471b-9955-e0044eec0e47"
+              name="MP-payButton" class='blue-ar-l-rn-none'>MercadoPago</a>
+            <script type="text/javascript">
+              (function () { function $MPC_load() { window.$MPC_loaded !== true && (function () { var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js"; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); window.$MPC_loaded = true; })(); } window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null; })();
+            </script>
+
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="W8YCCP72ESDLJ">
+            <button class="btn btn-warning btn-lg">Paypal</button>
+            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+          </form>
+
         </div>
 
         <div class="col precios">
           <img src="img/precios2_1.png" width="350em" alt="">
-          <a href="#" class="btn btn-primary btn-lg">MercadoPago</a>
-          <a href="#" class="btn btn-primary btn-lg">Paypal</a>
+
+          <!-- Boton de MercadoPago y Paypal-->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+            <a mp-mode="dftl"
+              href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=164184145-0218af87-ed12-4b68-b3fa-24dc8698ea9c"
+              name="MP-payButton" class='blue-ar-l-rn-none'>MercadoPago</a>
+            <script type="text/javascript">
+              (function () { function $MPC_load() { window.$MPC_loaded !== true && (function () { var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js"; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); window.$MPC_loaded = true; })(); } window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null; })();
+            </script>
+
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="CXUXUGXK8UZKL">
+            <button class="btn btn-warning btn-lg">Paypal</button>
+            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+          </form>
         </div>
 
         <div class="col precios">
           <img src="img/precios3_1.png" width="350em" alt="">
-          <a href="#" class="btn btn-primary btn-lg">MercadoPago</a>
-          <a href="#" class="btn btn-primary btn-lg">Paypal</a>
+
+          <!-- Boton de MercadoPago y Paypal-->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+            <a mp-mode="dftl"
+              href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=164184145-97a7561f-547f-45fb-836e-88ce50813459"
+              name="MP-payButton" class='blue-ar-l-rn-none'>MercadoPago</a>
+            <script type="text/javascript">
+              (function () { function $MPC_load() { window.$MPC_loaded !== true && (function () { var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js"; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); window.$MPC_loaded = true; })(); } window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null; })();
+            </script>
+            
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="ABAV27ZESRZDA">
+            <button class="btn btn-warning btn-lg">Paypal</button>
+            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+          </form>
+
         </div>
 
       </div>
@@ -258,28 +345,22 @@
             <div class="footer-social">
               <h2>Nuestras redes</h2>
               <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.instagram.com/fx.experience/" target="_blank"><i class="fa fa-instagram"></i></a>
             </div>
 
           </div>
         </div>
 
         <div class="col-md-4">
-          <div class="footer-info">
+          <div class="footer-info ml-5">
 
             <div class="footer-info-single">
-              <div class="icon-box"><i class="fa fa-envelope"></i></div>
-              <p>Infofxexperience@gmail.com</p>
+              <div class="icon-box">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <p class="pl-0"><strong>Infofxexperience@gmail.com </strong></p>
             </div>
 
-            <div class="footer-info-single">
-              <a href="#" target="_blank">
-                <div class="icon-box"><i class="fa fa-map-marker"></i></div>
-              </a>
-              <p>Lorem ipsum dolor sit, amet consectetur
-              </p>
-            </div>
           </div>
         </div>
       </div>
@@ -303,6 +384,7 @@
 
   <!-- BOTON DE WSP -->
   <a href="#" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
 
 
   <!-- BOOSTRAP JS-->
