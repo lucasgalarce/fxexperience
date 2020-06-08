@@ -208,3 +208,8 @@ footer a:hover {
 #opera {
     color: rgb(39, 121, 122);
 }
+.banner{
+    margin-top: -2em;
+    background-color: rgb(64, 78, 107);
+    text-align: center;
+}
