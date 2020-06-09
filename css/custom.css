@@ -200,6 +200,15 @@ footer a:hover {
 .precios {
     text-align: center;
 }
+
+.preguntas {
+    padding: 5px;
+    margin: 5px
+}
+.preguntas h3 {
+    text-align: center;
+}
+
 #opera {
     color: rgb(39, 121, 122);
 }
